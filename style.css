@@ -87,7 +87,7 @@ justify-content: center;
 
 .name-span{
   margin-left: 4rem;
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   letter-spacing: .4px;
   color: #fff;
 }
@@ -109,7 +109,6 @@ justify-content: center;
 .home-page{
   margin-top: 3rem;
   margin-left: 10rem;
-  padding: 40px 80px;
 }
 
 .social-icons{
@@ -125,7 +124,7 @@ justify-content: center;
   margin-left: 8rem;
 }
 
-span:hover{
+.name:hover{
   display: inline-block;
   animation: rubberBand 1s;
   color: #fb0c54;
@@ -863,6 +862,39 @@ span:hover{
       align-items: center;
      }
 
+     @media screen and (max-width: 640px){
+
+   
+      .section-a .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    
+      .section-a .container div:first-child {
+        order: 2;
+        font-size: 1.5rem;
+      }
+    
+      .section-a .container div:nth-child(2) {
+        order: -1;
+        font-size: 0.1rem;
+      }
+    
+      .section-a img {
+        padding-top: 30%;
+        width: 20%;
+        margin: auto;
+      }
+      .section-a .btn{
+        margin-right: 30%;
+      }
+
+      .section-b .about-me{
+        font-size: 0.9rem;
+      }
+    }
+  
+      
      @keyframes rubberBand{
       0%{
           transform: scale3d(1,1,1);
