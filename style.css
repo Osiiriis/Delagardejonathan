@@ -95,8 +95,8 @@ justify-content: center;
 .d{
   margin-left: 9px;
 }
-.L{
-  margin-left: 3px;
+.l{
+  margin-left: 9px;
 }
 .section-a .container p{
   color: #fff;
@@ -118,12 +118,11 @@ justify-content: center;
   justify-content: space-between;
 }
 
-.container img{
+.logo-two{
 
   width: 55%;
   margin-top: 5rem;
   margin-left: 8rem;
-  animation: fadeUp 1S forwards;
 }
 
 span:hover{
@@ -137,7 +136,7 @@ span:hover{
   color: #0cfadb;
 }
 
-.container img:hover{
+.logo-two:hover{
   animation: rubberBand 1s;
 }
 
@@ -178,12 +177,13 @@ span:hover{
 
 .section-d h1{
   text-align: center;
-  font-family:  'Herr Von Muellerhoff', cursive;
+  font-family: cursive;
   font-size: 3rem;
   color: #f06449;
   font-size: 3REM;
   padding-top: 1rem;
   font-style: italic;
+  text-transform: uppercase;
 }
 .case-studies-list {
   margin: 0;
