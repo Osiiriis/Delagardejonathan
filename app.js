@@ -7,7 +7,7 @@ window.addEventListener("scroll", function(){
       const nav = document.querySelector(".nav-list")
       const navLink = document.querySelectorAll(".nav-list li")
 
-    burger.addEventListener('touch', () => 
+    burger.addEventListener('click', () => 
     {nav.classList.toggle('nav-active');
      //Animate link
      navLink.forEach((link,index) => {
