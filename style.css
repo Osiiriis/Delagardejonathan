@@ -8,64 +8,127 @@
 }
 
 .nav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.6s;
-    padding : 40px 100px;
-    z-index : 100000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding : 40px 100px;
+  z-index : 100000;
 }
 
 .logo{
-    position: relative;
-    color: #f06449;
-    font-weight: 700;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.6s;
+  position: relative;
+  color: #f06449;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
 }
 
 .nav-list{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-item{
-    position: relative;
-    list-style: none;
-    margin: 0 15px;
-    letter-spacing: 2px;
-    font-weight: 500px;
-    transition: 0.5s;
+  position: relative;
+  list-style: none;
+  margin: 0 15px;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.5s;
 }
 
 .nav-link{
-    text-decoration: none;
-    color: #f06449;
+  text-decoration: none;
+  color: #f06449;
 }
 
 .sticky{ 
-    padding: 10px 100px;
-    background-color: #fff;
+  padding: 10px 100px;
+  background-color: #fff;
 }
 
 .sticky .logo
 {
-    color: black;
+  color: #f06449;
+}
+
+.sticky .burger div{
+  background-color:  #f06449;;
 }
 
 .sticky .nav-link{
-    color: black;
-    padding-top: .5rem;
+  color: black;
+  padding-top: .5rem;
+}
+.burger{
+  display: none;
+}
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
 }
 
+@media screen and (max-width:768px){
+
+  body{
+    overflow-x: hidden;
+  }
+  .sticky{ 
+    background-color: #fff;
+    padding-top: 50px;
+  }
+  .sticky .burger{ 
+    margin-bottom: 15PX;
+  }
+
+  .sticky .logo{ 
+    margin-bottom: 15PX;
+  }
+  .nav-list{
+    position: absolute;
+    right: 0px;
+    height: 100vh;
+    top: 88px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+
+
+  .logo{
+    font-size: .7rem;
+  }
+
+  .burger{
+    display: block;
+    margin-left: 1rem;
+  }
+
+  .nav-list li{
+    opacity: 0;
+  }
+
+  .nav-active{
+    transform: translateX(0%);
+  }
+}
 /*End nav*/
 
 .section-a .container{
@@ -917,9 +980,11 @@ justify-content: center;
         top :0;
         font-size: .9rem;
       }
-  
+    } 
       
-     @keyframes rubberBand{
+     
+    
+    @keyframes rubberBand{
       0%{
           transform: scale3d(1,1,1);
       }
@@ -938,68 +1003,28 @@ justify-content: center;
       100%{
           transform: scale3d(1,1,1);
       }
+    }
   
-  }
-
-  @keyframes scale {
-    0%{
-        transform: scale(2);
-    }
-    100%{
+    @keyframes navLinkFade{
+      from{
+        opacity: 0;
+        transform: translateX(50px);
+      }
+      to{
         opacity: 1;
-        transform: scale(1);
+        transform: translateX(0px);
+      }
     }
-}
 
-@keyframes fadeUp{
-  0%{
-      transform: translateY(4rem);
-  }
-  100%{
-      opacity: 1;
-      transform: translateY(0);
-  }
-}
+    .toggle .line1{
+      transform: rotate(-45deg) translate(-5px, 6px);
 
-@keyframes grow { 
-  0%{
-     width:0;
-  }
-  100%{
-      opacity: 1;
-      width:100%;
-  }
-}
-@keyframes spin { 
-  0%{
-    transform: rotate(0);
-  }
-  100%{
-      opacity: 1;
-      transform: rotate(-360deg);
-  }
-}
-@keyframes fadeDown{
-  0%{
-      transform: translateY(-1rem);
-  }
-  100%{
-      opacity: 1;
-      transform: translateY(0);
-  }
-}
+    }
+    .toggle .line2 {
 
-@keyframes up{
-  0%{
-      opacity: 0;
-  }
-  50%{
-      opacity: 1;
-  }
-  100%{
-      opacity: 0;
-      transform: translateY(-1rem);
-  }
-}
+    opacity: 0;      
+    }
+    .toggle .line3{
 
-
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
