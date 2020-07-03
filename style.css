@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Quattrocento:wght@700&display=swap');
 
 *
 {
@@ -22,7 +25,7 @@
 
 .logo{
   position: relative;
-  color: #f06449;
+  color:  #1496bb;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
@@ -43,12 +46,14 @@
   margin: 0 15px;
   letter-spacing: 2px;
   font-weight: 500px;
+  font-family: 'Lato', cursive;
   transition: 0.5s;
+  font-size: 1rem;
 }
 
 .nav-link{
   text-decoration: none;
-  color: #f06449;
+  color:  #1496bb;
 }
 
 .sticky{ 
@@ -58,15 +63,15 @@
 
 .sticky .logo
 {
-  color: #f06449;
+  color:  #1496bb;;
 }
 
 .sticky .burger div{
-  background-color:  #f06449;;
+  background-color:  #1496bb;
 }
 
 .sticky .nav-link{
-  color: black;
+  color:  #1496bb;;
   padding-top: .5rem;
 }
 .burger{
@@ -106,6 +111,9 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    font-size: 2rem;
+    line-height: 5rem;
+    font-weight: 700;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
   }
@@ -134,7 +142,6 @@
 .section-a .container{
 display: grid;
 grid-template-columns: 1fr 1fr;
-gap: 3rem;
 align-items: center;
 justify-content: center; 
 
@@ -150,9 +157,10 @@ justify-content: center;
 
 .name-span{
   margin-left: 4rem;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   letter-spacing: .4px;
   color: #fff;
+  font-family: 'Playfair Display', serif;
 }
 
 .d{
@@ -161,14 +169,14 @@ justify-content: center;
 .l{
   margin-left: 9px;
 }
-.section-a .container p{
-  color: #fff;
-  font-size: 1.5rem;
-  margin-left: 4rem;
+.description{
+  color:  #fff;
+  font-size: 1.8rem;  
   margin-top: 1rem;
-  font-family: 'Source Sans Pro', sans-serif;
-  animation: scale .5S forwards;
+  font-family: 'Playfair Display', serif;
+  margin-left: 2.8rem;
 }
+
 .home-page{
   margin-top: 3rem;
   margin-left: 10rem;
@@ -176,7 +184,6 @@ justify-content: center;
 
 .social-icons{
   display: flex;
-  color: #fff;
   justify-content: space-between;
 }
 
@@ -202,6 +209,7 @@ justify-content: center;
   animation: rubberBand 1s;
 }
 
+
 /*End section hero */
 
 .section-b
@@ -222,29 +230,31 @@ justify-content: center;
   width: 50%;
   text-align: center;
   font-size: 1.5rem;
-  color: #f06449;
+  color: #43ABC9;
+  font-weight: 900;
+
 }
 
 .about-me h2{
-  font-family:  'Herr Von Muellerhoff', cursive;
+  font-family: 'Quattrocento', serif;
   font-size: 2.5rem;
+  color: #1496bb;
 }
 .about-me p{
   margin-top: 1rem;
   font-weight: 300;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Playfair Display', serif;
 
 }
 
 
 .section-d h1{
   text-align: center;
-  font-family: cursive;
+  font-family: 'Quattrocento', serif;
   font-size: 3rem;
-  color: #f06449;
+  color:  #1496bb;
   font-size: 3REM;
-  padding-top: 1rem;
-  font-style: italic;
+  padding-top: 3rem; 
   text-transform: uppercase;
 }
 .case-studies-list {
@@ -927,34 +937,39 @@ justify-content: center;
 
      @media screen and (max-width: 640px){
 
-   
       .section-a .container {
         grid-template-columns: 1fr;
         justify-content: center;
         align-items: center;
       }
     
-    .name-span {
-        order: 2;
-        font-size: 1.2rem;
-  
+      .name-span {
+        order: 1;
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 1rem;
+        margin-right: 30px;
       }
 
-      .des{
-        font-size: .7rem;
+      .description{
+        font-size: 1rem;
+        text-align: center;
+        margin-right: 20px;
       }
-    .home-page{
-      order: -1;
-    }
-    
       .section-a img {
-        order: -2;
+        order: -1;
         padding-top: 30%;
         width: 30%;
         max-height: auto;
         margin: auto;
       } 
+
+      .home-page{
+        padding :20,20,20,20;
+        margin-left: 40%;
+      }
    
+
 
       .section-b .container{
         display: grid;
