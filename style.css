@@ -92,7 +92,7 @@
   }
   .sticky{ 
     background-color: #fff;
-    padding-top: 50px;
+    padding-top: 40px;
   }
   .sticky .burger{ 
     margin-bottom: 15PX;
@@ -107,13 +107,14 @@
     height: 100vh;
     top: 88px;
     background-color: white;
+    opacity: 0.8;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     font-size: 2rem;
     line-height: 5rem;
-    font-weight: 700;
+    font-weight: 1200;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
   }
@@ -121,7 +122,7 @@
 
 
   .logo{
-    font-size: .7rem;
+    font-size: 1.4rem;
   }
 
   .burger{
@@ -199,11 +200,6 @@ justify-content: center;
   animation: rubberBand 1s;
   color: #fb0c54;
 }
-.virgule:hover{
-  display: inline-block;
-  animation: rubberBand 1s;
-  color: #0cfadb;
-}
 
 .logo-two:hover{
   animation: rubberBand 1s;
@@ -234,6 +230,9 @@ justify-content: center;
   font-weight: 900;
 
 }
+ .section-b img{
+   opacity: 0.8;
+ }
 
 .about-me h2{
   font-family: 'Quattrocento', serif;
@@ -257,6 +256,7 @@ justify-content: center;
   padding-top: 3rem; 
   text-transform: uppercase;
 }
+
 .case-studies-list {
   margin: 0;
   padding: 80px 0 80px 0;
@@ -593,14 +593,6 @@ justify-content: center;
           background-repeat: no-repeat;
           transform: scale(1);
           transition: transform .3s ease,-webkit-transform .3s ease; }
-        .experiments-container .inner-container .experiment .experiment-circle .experiment-img-1 {
-          background-image: url(images/temp/todo.png); }
-        .experiments-container .inner-container .experiment .experiment-circle .experiment-img-2 {
-          background-image: url(images/temp/googleapi.png); }
-        .experiments-container .inner-container .experiment .experiment-circle .experiment-img-3 {
-          background-image: url(images/temp/music-app.png); }
-        .experiments-container .inner-container .experiment .experiment-circle .experiment-img-4 {
-          background-image: url(images/temp/cal.png); }
       .experiments-container .inner-container .experiment .experiment-title-area {
         position: absolute;
         top: 85%;
@@ -736,17 +728,7 @@ justify-content: center;
       .social-icon--twitter .tooltip:after {
         border-top-color: #2b97f1;
       }
-      .social-icon--codepen {
-        background: #000;
-        color: #fff;
-      }
-      .social-icon--codepen .tooltip {
-        background: #000;
-        color: currentColor;
-      }
-      .social-icon--codepen .tooltip:after {
-        border-top-color: #000;
-      }
+
       .social-icon--facebook {
         background: #3b5a9b;
         color: #fff;
@@ -768,17 +750,6 @@ justify-content: center;
       }
       .social-icon--instagram .tooltip:after {
         border-top-color: #527fa6;
-      }
-      .social-icon--dribbble {
-        background: #ef5a92;
-        color: #fff;
-      }
-      .social-icon--dribbble .tooltip {
-        background: #ef5a92;
-        color: currentColor;
-      }
-      .social-icon--dribbble .tooltip:after {
-        border-top-color: #ef5a92;
       }
       .social-icon--github {
         background: #4284c0;
@@ -963,12 +934,6 @@ justify-content: center;
         max-height: auto;
         margin: auto;
       } 
-
-      .home-page{
-        padding :20,20,20,20;
-        margin-left: 40%;
-      }
-   
 
 
       .section-b .container{
