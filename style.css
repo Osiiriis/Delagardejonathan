@@ -221,7 +221,7 @@ justify-content: center;
 
 .about-me{
   position: absolute;
-  top: 40%;
+  top: 30%;
   transform: translateX(50%);
   width: 50%;
   text-align: center;
@@ -241,7 +241,7 @@ justify-content: center;
   margin-top: 1rem;
 }
 .about-me p{
-  margin-top: 3rem;
+  margin-top: 1.8rem;
   font-weight: 300;
   font-family: 'Playfair Display', serif;
 
@@ -329,11 +329,10 @@ justify-content: center;
   height: 100%;
   background-color: rgba(28, 29, 37, 0.9);
   background: linear-gradient(270deg, rgba(35, 90, 166, 0.9), rgba(16, 27, 59, 0.9));
-  -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
-  transition: opacity 0.2s, -webkit-transform 0.35s cubic-bezier(0.694, 0.048, 0.335, 1) 0.2s;
+  transition: opacity 0.2s;
   transition: transform 0.35s cubic-bezier(0.694, 0.048, 0.335, 1) 0.2s, opacity 0.2s;
-  transition: transform 0.35s cubic-bezier(0.694, 0.048, 0.335, 1) 0.2s, opacity 0.2s, -webkit-transform 0.35s cubic-bezier(0.694, 0.048, 0.335, 1) 0.2s;
+  transition: transform 0.35s cubic-bezier(0.694, 0.048, 0.335, 1) 0.2s, opacity 0.2s;
   z-index: 9; }
 
 .case-studies-list .case-study .case-study-reveal-mask {
@@ -355,11 +354,10 @@ justify-content: center;
   height: 100%;
   background-color: #1c1d25;
   background: linear-gradient(270deg, #235aa6, #101b3b);
-  -webkit-transform: translateX(100%);
   transform: translateX(100%);
   transition: -webkit-transform 0.4s cubic-bezier(0.694, 0.048, 0.335, 1) 0.15s;
   transition: transform 0.4s cubic-bezier(0.694, 0.048, 0.335, 1) 0.15s;
-  transition: transform 0.4s cubic-bezier(0.694, 0.048, 0.335, 1) 0.15s, -webkit-transform 0.4s cubic-bezier(0.694, 0.048, 0.335, 1) 0.15s;
+  transition: transform 0.4s cubic-bezier(0.694, 0.048, 0.335, 1) 0.15s;
   z-index: 101; }
 
 .case-studies-list .case-study .case-study-mask-number {
@@ -375,12 +373,12 @@ justify-content: center;
   max-width: 550px;
   -webkit-transform: scale(1) translateX(0);
   transform: scale(1) translateX(0);
-  transition: opacity .25s,-webkit-transform .45s;
+  transition: opacity .25s;
   transition: transform .45s,opacity .25s;
-  transition: transform .45s,opacity .25s,-webkit-transform .45s; }
+  transition: transform .45s,opacity .25s;}
 
 .case-studies-list .case-study .case-study-subtitle {
-  font-family: LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif;
+  font-family: "Times New Roman",serif;
   font-weight: 400;
   font-style: italic;
   margin-bottom: 20px; }
@@ -399,10 +397,8 @@ justify-content: center;
 
   @media only screen and (min-width: 64em) {
     .case-studies-list li:nth-child(even) .case-study {
-      -webkit-transform: translateX(-25px);
       transform: translateX(-25px); }
     .case-studies-list li:nth-child(odd) .case-study {
-      -webkit-transform: translateX(25px);
       transform: translateX(25px); }
     .case-studies-list .case-study .case-study-mask-number {
       display: block;
@@ -413,14 +409,14 @@ justify-content: center;
       height: 198px;
       font-size: 11.5625em;
       overflow: hidden;
-      font-family: League Spartan,Helvetica,Arial,sans-serif;
+      font-family: "Helvetica" ,Arial,sans-serif;
       color: #99999d;
       -webkit-transform: translateY(15px);
       transform: translateY(15px);
       opacity: 0;
-      transition: opacity 0.3s, -webkit-transform 0.45s cubic-bezier(0.694, 0.048, 0.335, 1);
+      transition: opacity 0.3s;
       transition: opacity 0.3s, transform 0.45s cubic-bezier(0.694, 0.048, 0.335, 1);
-      transition: opacity 0.3s, transform 0.45s cubic-bezier(0.694, 0.048, 0.335, 1), -webkit-transform 0.45s cubic-bezier(0.694, 0.048, 0.335, 1);
+      transition: opacity 0.3s, transform 0.45s cubic-bezier(0.694, 0.048, 0.335, 1);
       z-index: 90; }
     .case-studies-list .case-study .case-study-mask-back, .case-studies-list .case-study .case-study-mask-front {
       position: absolute;
@@ -431,13 +427,11 @@ justify-content: center;
     .case-studies-list .case-study .case-study-mask-overlay {
       overflow: hidden;
       position: relative;
-      -webkit-transform: translate3d(0, 100%, 0);
       transform: translate3d(0, 100%, 0);
       color: transparent; }
     .case-studies-list .case-study .case-study-mask-overlay, .case-studies-list .case-study .case-study-mask-overlay:before {
-      transition: -webkit-transform 0.6s cubic-bezier(0.694, 0.048, 0.335, 1) 0s;
       transition: transform 0.6s cubic-bezier(0.694, 0.048, 0.335, 1) 0s;
-      transition: transform 0.6s cubic-bezier(0.694, 0.048, 0.335, 1) 0s, -webkit-transform 0.6s cubic-bezier(0.694, 0.048, 0.335, 1) 0s; }
+      transition: transform 0.6s cubic-bezier(0.694, 0.048, 0.335, 1) 0s; }
     .case-studies-list .case-study .case-study-mask-overlay:before {
       content: attr(data-index);
       position: absolute;
@@ -447,36 +441,27 @@ justify-content: center;
       text-shadow: 5px 5px 11px rgba(74, 74, 74, 0.5);
       width: 100%;
       height: 100%;
-      -webkit-transform: translate3d(0, -100%, 0);
       transform: translate3d(0, -100%, 0); }
     .case-studies-list .case-study .case-study-text-section {
       opacity: 1;
-      -webkit-transform: scale(1) translateY(0);
       transform: scale(1) translateY(0);
       transition-delay: .4s; }
     .case-studies-list .case-study:hover {
-      -webkit-transform: scale(0.99);
       transform: scale(0.99);
       box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.65); }
     .case-studies-list .case-study:hover .case-study-mask:after {
-      -webkit-transform: translateX(0);
       transform: translateX(0); }
     .case-studies-list .case-study:hover .case-study-mask-number {
       opacity: 1;
-      -webkit-transform: translateY(0);
       transform: translateY(0); }
     .case-studies-list .case-study:hover .case-study-mask-overlay, .case-studies-list .case-study:hover .case-study-mask-overlay:before {
       transition-delay: .4s;
-      -webkit-transform: translateZ(0);
       transform: translateZ(0); }
     .case-studies-list .case-study:hover .case-study-text-section {
-      -webkit-transform: scale(1.05);
       transform: scale(1.05); }
     .case-studies-list .case-study.is-hidden .case-study-reveal-mask:after {
-      -webkit-transform: translateX(0);
       transform: translateX(0); }
     .case-studies-list .case-study.is-hidden .case-study-text-section {
-      -webkit-transform: translateY(50px);
       transform: translateY(50px);
       opacity: 0; } }
   
@@ -571,9 +556,7 @@ justify-content: center;
         height: 100%;
         background-color: #fce0db;
         transition: 0.4s cubic-bezier(0.52, 0.01, 0.16, 1);
-        -webkit-transform: scaleX(0);
         transform: scaleX(0);
-        -webkit-transform-origin: 0 0;
         transform-origin: 0 0;
         z-index: 1; }
       .experiments-container .inner-container .experiment .experiment-circle {
@@ -593,7 +576,7 @@ justify-content: center;
           background-size: cover;
           background-repeat: no-repeat;
           transform: scale(1);
-          transition: transform .3s ease,-webkit-transform .3s ease; }
+          transition: transform .3s ease; }
       .experiments-container .inner-container .experiment .experiment-title-area {
         position: absolute;
         top: 85%;
@@ -627,7 +610,6 @@ justify-content: center;
         z-index: 10; }
         .experiments-container .inner-container .experiment .experiment-number-area:before, .experiments-container .inner-container .experiment .experiment-number-area:after {
           position: absolute;
-          -webkit-transform-origin: 100% 100%;
           transform-origin: 100% 100%;
           right: 112%;
           transition: 0.45s cubic-bezier(0.52, 0.01, 0.16, 1); }
@@ -648,14 +630,11 @@ justify-content: center;
       .experiments-container .inner-container .experiment:hover .experiment-circle .experiment-img {
         transform: scale(1.1); }
       .experiments-container .inner-container .experiment:hover .experiment-mask {
-        -webkit-transform: scaleX(1);
         transform: scaleX(1);
         transition-delay: .25s; }
       .experiments-container .inner-container .experiment:hover .experiment-number-area:before {
-        -webkit-transform: scaleX(1.3);
         transform: scaleX(1.3); }
       .experiments-container .inner-container .experiment:hover .experiment-number-area:after {
-        -webkit-transform: translateX(-15px);
         transform: translateX(-15px);
         transition-delay: .12s; }
   
@@ -672,16 +651,13 @@ justify-content: center;
       width: 100% !important; } }
 
       .social-icons {
-        display: -webkit-box;
         display: flex;
       }
       
       .social-icon {
-        display: -webkit-box;
         display: flex;
         -webkit-box-align: center;
                 align-items: center;
-        -webkit-box-pack: center;
                 justify-content: center;
         position: relative;
         width: 80px;
@@ -692,7 +668,6 @@ justify-content: center;
         font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
         font-size: 2.5rem;
         text-decoration: none;
-        -webkit-transition: all 0.15s ease;
         transition: all 0.15s ease;
       }
       .social-icon:hover {
@@ -701,7 +676,6 @@ justify-content: center;
       .social-icon:hover .tooltip {
         visibility: visible;
         opacity: 1;
-        -webkit-transform: translate(-50%, -150%);
                 transform: translate(-50%, -150%);
       }
       .social-icon:active {
@@ -781,9 +755,7 @@ justify-content: center;
         opacity: 0;
         pointer-events: none;
         text-transform: uppercase;
-        -webkit-transform: translate(-50%, -100%);
                 transform: translate(-50%, -100%);
-        -webkit-transition: all 0.3s ease;
         transition: all 0.3s ease;
         z-index: 1;
       }
@@ -798,7 +770,6 @@ justify-content: center;
         border: solid;
         border-width: 10px 10px 0 10px;
         border-color: transparent;
-        -webkit-transform: translate(-50%, 100%);
                 transform: translate(-50%, 100%);
       }
       
@@ -836,9 +807,8 @@ justify-content: center;
         width: 100%;
         background-color: #1b2e63;
         background: linear-gradient(270deg, #235aa6, #101b3b);
-        transition: -webkit-transform 0.6s cubic-bezier(0.694, 0.048, 0.335, 1) 0.05s;
         transition: transform 0.6s cubic-bezier(0.694, 0.048, 0.335, 1) 0.05s;
-        transition: transform 0.6s cubic-bezier(0.694, 0.048, 0.335, 1) 0.05s, -webkit-transform 0.6s cubic-bezier(0.694, 0.048, 0.335, 1) 0.05s;
+        transition: transform 0.6s cubic-bezier(0.694, 0.048, 0.335, 1) 0.05s;
         z-index: 1;
      }
       .btn .btn-mask:after, .btn .btn .btn-mask:before {
@@ -847,16 +817,14 @@ justify-content: center;
         top: 0;
         left: 0;
         height: 100%;
-        -webkit-transform: translateX(-110%);
         transform: translateX(-110%);
      }
       .btn .btn-mask:after {
         width: 80%;
         background-color: #26408b;
         background: linear-gradient(270deg, #235aa6, #213777);
-        transition: -webkit-transform 0.6s cubic-bezier(0.694, 0.048, 0.335, 1);
         transition: transform 0.6s cubic-bezier(0.694, 0.048, 0.335, 1);
-        transition: transform 0.6s cubic-bezier(0.694, 0.048, 0.335, 1), -webkit-transform 0.6s cubic-bezier(0.694, 0.048, 0.335, 1);
+        transition: transform 0.6s cubic-bezier(0.694, 0.048, 0.335, 1);
         z-index: 2;
      }
       .btn .btn-icon {
@@ -865,11 +833,9 @@ justify-content: center;
         right: -25px;
         width: 35px;
         height: 35px;
-        -webkit-transform: translateX(0);
         transform: translateX(0);
-        transition: -webkit-transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
         transition: transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
-        transition: transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1), -webkit-transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
+        transition: transform 0.3s cubic-bezier(0.694, 0.048, 0.335, 1);
      }
       .btn .btn-icon svg {
         width: 35px;
@@ -882,21 +848,17 @@ justify-content: center;
         fill: #fff;
      }
       .btn:hover .btn-mask:before {
-        transition: -webkit-transform 0.75s cubic-bezier(0.694, 0.048, 0.335, 1) 0.05s;
         transition: transform 0.75s cubic-bezier(0.694, 0.048, 0.335, 1) 0.05s;
-        transition: transform 0.75s cubic-bezier(0.694, 0.048, 0.335, 1) 0.05s, -webkit-transform 0.75s cubic-bezier(0.694, 0.048, 0.335, 1) 0.05s;
-     }
+        transition: transform 0.75s cubic-bezier(0.694, 0.048, 0.335, 1) 0.05s;
+      }
       .btn:hover .btn-mask:after {
-        transition: -webkit-transform 0.75s cubic-bezier(0.694, 0.048, 0.335, 1);
         transition: transform 0.75s cubic-bezier(0.694, 0.048, 0.335, 1);
-        transition: transform 0.75s cubic-bezier(0.694, 0.048, 0.335, 1), -webkit-transform 0.75s cubic-bezier(0.694, 0.048, 0.335, 1);
+        transition: transform 0.75s cubic-bezier(0.694, 0.048, 0.335, 1);
      }
       .btn:hover .btn-mask:after, .btn .btn:hover .btn-mask:before {
-        -webkit-transform: translateX(200%);
         transform: translateX(200%);
      }
       .btn:hover .btn-icon {
-        -webkit-transform: translateX(7px);
         transform: translateX(7px);
      }
 
